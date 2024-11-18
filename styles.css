@@ -1,0 +1,109 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #FF7F50 0%, #FF1493 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #FF1493;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus, button:focus {
+  outline: none;
+  border-color: #FF1493;
+  background-color: #FFF0F6;
+}
+
+input, select {
+  background-color: #f9f9f9;
+}
+
+button {
+  background-color: #FF1493;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FF69B4;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Adicionando animação para o formulário */
+form {
+  transition: all 0.3s ease-in-out;
+}
+
+form:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 500px) {
+  .container {
+      padding: 25px;
+  }
+
+  h1 {
+      font-size: 28px;
+  }
+
+  input, select, button {
+      font-size: 15px;
+  }
+}

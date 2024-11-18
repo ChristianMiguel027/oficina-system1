@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Serviços</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento de Serviço</h1>
+        
+        <!-- Formulário de agendamento -->
+        <form id="agendamentoForm">
+            <!-- Campo para nome do cliente -->
+            <label for="cliente">Nome do Cliente:</label>
+            <input type="text" id="cliente" name="cliente" placeholder="Digite o nome do cliente" required>
+            
+            <!-- Campo para data do serviço -->
+            <label for="data">Data do Serviço:</label>
+            <input type="date" id="data" name="data" required>
+            
+            <!-- Campo para selecionar o serviço -->
+            <label for="servico">Tipo de Serviço:</label>
+            <select id="servico" name="servico" required>
+              <option value="">Selecione o serviço</option>
+              <option value="Alinhamento">Alinhamento</option>
+              <option value="Balanceamento">Balanceamento</option>
+              <option value="Troca de óleo">Troca de óleo</option>
+              <option value="Higienização">Higienização</option>
+              <option value="Lanternagem">Lanternagem</option>
+              <option value="Pintura">Pintura</option>
+              <option value="Conserto">Conserto</option>
+          </select>
+
+            
+            <!-- Botão de agendamento -->
+            <button type="button" id="agendarButton">Agendar Serviço</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
